@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="js/owl.carousel.min.js">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/adminn.css">
+    <link rel="icon" href="images/kcal.png" type="image/gif" />
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span><img src="images/kcal2.png" alt="" width="70" style="border-radius: 10px;margin-left: 120%;"></span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="#" id="BT0" class="active"><span class="las la-igloo"></span><span>Tableau de bord</span></a>
+                </li>
+                <li>
+                    <a href="#" id="BT1"><span class="las la-users"></span><span>Gérer Les Gestionnaires</span></a>
+                </li>
+                <li>
+                    <a href="#" id="BT5"><span class="las la-user-circle"></span><span>Gérer Les Clients</span></a>
+                </li>
+
+                <li>
+                    <a href="#" id="BT6" class=""><span class="las la-power-off"></span><span>Déconnexion</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="header-title">
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="las la-bars"  style="margin-top: 10px;"></span>
+                    </label> Dashboard
+                </h2>
+                <!--<div class="search-wrapper">
+                    <span class="las la-search">
+                    </span>
+                    <input type="search" placeholder="Search here"/>
+                </div>-->
+
+                <div class="user-wrapper">
+                    <img id="userimage" src="Images/clt.png" width="40px" height="40px" alt="">
+                    <div>
+                        <h4 id="nom11">Younes ID</h4>
+                        <small>ADMIN</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <br>
+            <div class="card">
+                <div class="card-single">
+                    <div>
+                        <h1 id="1val">54</h1>
+                        <span>clients</span>
+                    </div>
+                    <div>
+                        <span class="las la-users"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1 id="2val">10</h1>
+                        <span>Gestionnaires</span>
+                    </div>
+                    <div>
+                        <span class="lab la-google-wallet"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>1</h1>
+                        <span>Admin</span>
+                    </div>
+                    <div>
+                        <span class="fas fa-user-lock"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>79</h1>
+                        <span>Nombre Repas</span>
+                    </div>
+                    <div>
+                        <span class="las la-clipboard-list"></span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="recent-grid" id="T1">
+                <div class="cardd">
+                    <div class="Projects">
+                        <div class="card-header">
+                            <h3> Les Gestionnaires</h3>
+                            <!--<button style="cursor: pointer;"><b>Ajouter</b></button>-->
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Nom/Prenom</td>
+                                            <td>E-mail</td>
+                                            <td>Password</td>
+                                            <td>Telephone</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="gestlist">
+                                        <tr>
+                                            <td>sami dani</td>
+                                            <td>sami01@gmail.com</td>
+                                            <td>123456</td>
+                                            <td>06222222</td>
+                                            <td><button style="cursor: pointer; width: 95px;cursor: pointer; height: 35px;border-radius: 5px;background-color: #000;border: 1px #000; color: #fff;"><b>Supprimer</b></button>&nbsp;
+                                                <button style="cursor: pointer; width: 95px;cursor: pointer; height: 35px;border-radius: 5px;background-color: #000;border: 1px #000; color: #fff;"><b>modifier</b></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-grid" id="T2">
+                <div class="cardd">
+                    <div class="Projects">
+                        <div class="card-header">
+                            <h3> Les Clients</h3>
+                            <button style="cursor: pointer;" id="btnadd"><b>Ajouter</b></button>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Nom/Prenom</td>
+                                            <td>E-mail</td>
+                                            <td>Password</td>
+                                            <td>Telephone</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="clilist">
+                                        <tr>
+                                            <td>amin dani</td>
+                                            <td>amin01@gmail.com</td>
+                                            <td>1234526</td>
+                                            <td>0633332</td>
+                                            <td><button style="cursor: pointer; width: 95px;cursor: pointer; height: 35px;border-radius: 5px;background-color: #000;border: 1px #000; color: #fff;z-index: 100;margin-left: 12%;" id="mdfc"><b>modifier</b></button>&nbsp;&nbsp;
+                                                <button style="cursor: pointer; width: 95px;cursor: pointer; height: 35px;border-radius: 5px;background-color: #000;border: 1px #000; color: #fff;z-index: 100;"><b>Supprimer</b></button>&nbsp;&nbsp;
+                                                <button style="cursor: pointer; width: 95px;cursor: pointer; height: 35px;border-radius: 5px;background-color: #000;border: 1px #000; color: #fff;z-index: 100;"><b>Promotion</b></button></td>
+                                        </tr>
+                                        <tr id="add" style="cursor:text;">
+                                            <td class="txd"><input type="text" name="txt" placeholder="Nom.." style="width: 150px;">&nbsp;&nbsp;
+                                                <input type="text" name="txt" placeholder="Prenom.." style="width: 150px;margin-top: 1%;"></td>
+                                            <td class="txd2"><input type="text" name="txt" placeholder="E-mail.." style="width: 150px;"></td>
+                                            <td class="txd3"><input type="text" name="txt" placeholder="Password.." style="width: 150px;"></td>
+                                            <td class="txd4"><input type="text" name="txt" placeholder="Télephone.." style="width: 150px;"></td>
+                                            <td class="txd5">
+                                                <div style="display: flex;">
+                                                    <div class="new_Btn"><button>Image Client</button></div>
+                                                    <input type="file" id="html_btn" accept="image/png, image/jpeg" style="color: blanchedalmond;" /><br>
+                                                    <button style="cursor: pointer; width: 95px;cursor: pointer; height: 28px;border-radius: 5px;background-color: #000;border: 1px #000; color: #fff;z-index: 100;margin-left: 16%;"><b>Ajouter</b></button>&nbsp;&nbsp;
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </main>
+    </div>
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h1>Modifier</h1>
+            </div>
+            <div class="modal-body">
+                <fram>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nom</td>
+                                <td><input type="text" class="txt" placeholder="Votre Nom.." /></td>
+                            </tr>
+                            <tr>
+                                <td>Prenom</td>
+                                <td><input type="text" class="txt" placeholder="Votre Prenom.." /></td>
+                            </tr>
+                            <tr>
+                                <td>E-mail</td>
+                                <td><input type="text" class="txt" placeholder="E-mail.." /></td>
+                            </tr>
+                            <tr>
+                                <td>Télephone</td>
+                                <td><input type="text" class="txt" placeholder="Votre Num de Télephone.." /></td>
+                            </tr>
+                            <tr>
+                                <td>Mot de Passe</td>
+                                <td><input type="password" class="txt" placeholder="Mot de Passe.." /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" id="btns" value="Valider" style="width: 90px;cursor: pointer; height: 30px;margin-left: 70%;border-radius: 6px;background-color: #000;color: #fff;"></td>
+                                <td><input type="button" id="btns" value="Effacer" style="width: 90px;cursor: pointer;height: 30px;margin-left: 25%;border-radius: 6px;background-color: #000;color: #fff;"></td>
+                            </tr>
+                        </thead>
+                    </table>
+                </fram>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="Js/jquery-3.4.1.js"></script>
+    <script>
+        var plates = []
+        var array1 = []
+        var people = []
+        var array = []
+        var people2 = []
+        var array2 = []
+        var file;
+
+        function filein() {
+            let input = document.createElement('input');
+            input.type = 'file';
+            input.onchange = _ => {
+                // you can use this method to get file and perform respective operations
+                var files = Array.from(input.files);
+                file = files;
+                console.log(file);
+
+            };
+            input.click();
+
+        }
+        //----------------------------------------------------------------------------------------------------------------- users
+        function refiller() {
+            console.log(people)
+
+            $('.gestlist').empty()
+                //console.log(data)
+
+
+
+            for (let i = 0; i < people.length; i++) {
+                // console.log(plate);
+
+                //alert(array[looper])
+                $('.gestlist').append(`
+                        <tr>
+                        <td>${people[i].nom} ${people[i].prenom}</td>
+                        <td>${people[i].email}</td>
+                        <td>${people[i].pass}</td>
+                        <td>${people[i].num}</td>
+                        <td><button id="dwn${i}" class="btdwn" style="cursor: pointer; width: 95px;cursor: pointer; height: 35px;border-radius: 5px;background-color: #000;border: 1px #000; color: #fff;"><b id="dwb${i}" >Downgrade</b></button>&nbsp;
+                        </tr>
+            `);
+
+
+            }
+
+        }
+
+        function refiller1() {
+
+            //console.log(people2)
+
+            $('.clilist').empty();
+            //console.log(data)
+
+
+            for (let i = 0; i < people2.length; i++) {
+                // console.log(plate);
+
+                //alert(array[looper])
+
+                $('.clilist').append(`
+                <tr id="tar${i}">
+                <td>${people2[i].nom} ${people2[i].nom}</td>
+                <td>${people2[i].email}</td>
+                <td>${people2[i].pass}</td>
+                <td>${people2[i].nom}</td>
+                <td>
+                    <button id="pro${i}" class="btpro" style="cursor: pointer; width: 95px;cursor: pointer; height: 35px;border-radius: 5px;background-color: #000;border: 1px #000; color: #fff;z-index: 100;"><b id="tec${i}">Promotion</b></button></td>
+                </tr>    
+                `);
+
+
+            }
+
+        }
+
+        function arrayfill() {
+
+            array1 = []
+            for (let i = 0; i < people.length; i++) {
+                array1.push(people[i]._id + i)
+            }
+            $("#2val").html(people.length)
+        }
+
+        function arrayfill1() {
+
+            array2 = []
+            for (let i = 0; i < people2.length; i++) {
+                array2.push(people2[i]._id + i)
+            }
+            $("#1val").html(people2.length)
+        }
+        //reeeeeeeeeeeeeba
+        function post2() {
+            $.post("http://localhost:3000/api/user/gestter", {
+                rank: "gestionaire"
+
+            }, function(data, status) {
+                //console.log(data.response)
+
+                //console.log(data)
+
+
+                people = []
+                for (let usi of data.user) {
+                    // console.log(plate);
+
+
+                    people.push(usi);
+
+
+                    //alert(array[looper])
+
+
+
+                }
+                people.reverse()
+                arrayfill()
+                refiller()
+                    //refiller()
+            });
+        }
+
+        function post21() {
+            $.post("http://localhost:3000/api/user/gestter", {
+                rank: "user"
+
+            }, function(data, status) {
+                //console.log(data.response)
+
+                //console.log(data)
+
+
+                people2 = []
+                for (let usi of data.user) {
+                    // console.log(plate);
+
+
+                    people2.push(usi);
+
+
+                    //alert(array[looper])
+
+
+
+                }
+                people2.reverse()
+                arrayfill1()
+                refiller1()
+                    //refiller()
+            });
+        }
+        // reeeeeeeee 
+
+
+        function reloaded() {
+            //hna
+
+            //console.log(file)
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {},
+                tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            var userid2 = data.user;
+            var lastCharOfuserid = userid2.slice(-1)
+            if (lastCharOfuserid == '#') {
+                userid2 = userid2.slice(0, -1);
+            }
+            //console.log(userid2)
+            var plate;
+            var looper = 0;
+
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {},
+                tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            var userid3 = data.user;
+            var lastCharOfuserid = userid3.slice(-1)
+            if (lastCharOfuserid == '#') {
+                userid3 = userid3.slice(0, -1);
+            }
+            //console.log(userid3)
+
+
+            $.post("http://localhost:3000/api/user/show", {
+                userID: userid3
+
+            }, function(data, status, err) {
+
+
+
+                if (err.responseJSON.response == null) {
+                    document.location.href = "http://127.0.0.1:5502/conex.html";
+                }
+                if (data.response.acess === "true") {
+
+
+                    filinfo()
+                    post2()
+                    post21()
+
+                } else {
+                    document.location.href = "http://127.0.0.1:5502/conex.html";
+                }
+                if (data.response.acess == undefined) {
+                    document.location.href = "http://127.0.0.1:5502/conex.html";
+                }
+
+            })
+
+            function filinfo() {
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+                var userid3 = data.user;
+                var lastCharOfuserid = userid3.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid3 = userid3.slice(0, -1);
+                }
+                //console.log(userid3)
+
+
+                $.post("http://localhost:3000/api/user/show", {
+                    userID: userid3
+
+                }, function(data, status) {
+                    //F3
+                    $("#userimage").attr("src", data.response.avatar);
+                    $("#nom11").html(data.response.prenom + " " + data.response.nom)
+
+                })
+            }
+        }
+        //--------------------------------------------------------------------------------- food
+
+        function reloaded2() {
+            //hna
+
+            //console.log(file)
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {},
+                tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            var userid2 = data.user;
+            var lastCharOfuserid = userid2.slice(-1)
+            if (lastCharOfuserid == '#') {
+                userid2 = userid2.slice(0, -1);
+            }
+            //console.log(userid2)
+            var plate;
+
+
+
+
+
+            function filinfo() {
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+                var userid3 = data.user;
+                var lastCharOfuserid = userid3.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid3 = userid3.slice(0, -1);
+                }
+                //console.log(userid3)
+
+
+
+            }
+
+            function post2() {
+
+                $.post("http://localhost:3000/api/plate/plates", {
+                    user: userid2
+
+                }, function(data, status) {
+                    $('#foodls').empty()
+                        //console.log(data)
+
+                    plates = []
+                    for (plate of data.plate) {
+                        // console.log(plate);
+
+                        plates.push(plate);
+
+                        //alert(array[looper])
+
+
+
+                    }
+                    //sortat()
+                    //refiller()
+                });
+            }
+
+        }
+
+
+
+        $(document).ready(function() {
+
+            reloaded()
+            reloaded2()
+            $("#BT6").click(function() {
+                var mps1;
+                var mail1;
+
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+                var userid3 = data.user;
+                var lastCharOfuserid = userid3.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid3 = userid3.slice(0, -1);
+                }
+                // console.log(userid3)
+
+
+                $.post("http://localhost:3000/api/user/show", {
+                    userID: userid3
+
+                }, function(data, status) {
+                    // console.log(data)
+                    mps1 = data.response.pass;
+                    mail1 = data.response.email;
+
+                    // console.log(mps1 + " / " + mail1)
+
+                }).then(go => {
+                    goo()
+                }).then(go => {
+                    document.location.href = "http://127.0.0.1:5502/conex.html"
+                })
+
+
+                function goo() {
+                    $.post("http://localhost:3000/api/user/logout", {
+                        email: mail1,
+                        pass: mps1
+
+                    }, function(data, status) {
+                        //console.log(data)
+                    });
+                }
+
+            })
+        })
+        $(document).on('click', '.deleter', function(e) {
+            // alert('dd')
+            // alert($(e.target).attr('id'))
+
+            var test = $(e.target).attr('id');
+            console.log($(e.target).attr('id'))
+
+            test = test.substring(3, test.length)
+
+
+            var data
+            var id
+            data = array[parseInt(test)].substring(0, 24)
+            id = array[parseInt(test)].substring(24, array[parseInt(test)].length)
+                //alert(data + " /  " + id)
+            $.post("http://localhost:3000/api/user/delete", {
+                userID: data
+            }, function(data, status) {
+
+            })
+
+            $(`#all${id}`).hide()
+            $(`.fliplap${id}`).hide()
+
+            $("#userimage1").click(function() {
+
+                filein()
+
+            })
+
+        })
+        $(document).on('click', '.editter', function(e) {
+
+            var test = $(e.target).attr('id');
+
+            test = test.substring(4, test.length)
+
+            var deletev = parseInt(test)
+                //console.log(plates[deletev])
+
+            deleteid = plates[deletev]._id
+
+
+            //alert('hm' + test + "  " + plates[0].nom)
+            $(".modal").show()
+            $("#modnom").val(plates[deletev].nom)
+
+            $("#modcalo").val(plates[deletev].calo)
+
+            var heur = plates[deletev].heur.substring(0, 2)
+
+            var offheur;
+            offheur = heur.toString() + plates[deletev].heur.substring(2, 5)
+            $("#moddate").val(plates[deletev].date + "T" + offheur)
+
+        })
+        $(document).on('click', '.btpro', function(e) {
+
+            var test = $(e.target).attr('id');
+
+            test = test.substring(3, test.length)
+
+            var deletev = parseInt(test)
+                //console.log(plates[deletev])
+
+            let id = people2[deletev]._id
+
+
+            $.post("http://localhost:3000/api/user/upuser", {
+                userID: id
+
+            }, function(data, status) {
+                console.log(data)
+
+            }).then(go => {
+                reloaded()
+            }).then(go => {
+                reloaded2()
+            })
+
+
+
+
+        })
+        $(document).on('click', '.editter', function(e) {
+
+            var test = $(e.target).attr('id');
+
+            test = test.substring(4, test.length)
+
+            var deletev = parseInt(test)
+                //console.log(plates[deletev])
+
+            deleteid = plates[deletev]._id
+
+
+            //alert('hm' + test + "  " + plates[0].nom)
+            $(".modal").show()
+            $("#modnom").val(plates[deletev].nom)
+
+            $("#modcalo").val(plates[deletev].calo)
+
+            var heur = plates[deletev].heur.substring(0, 2)
+
+            var offheur;
+            offheur = heur.toString() + plates[deletev].heur.substring(2, 5)
+            $("#moddate").val(plates[deletev].date + "T" + offheur)
+
+        })
+        $(document).on('click', '.btdwn', function(e) {
+
+            var test = $(e.target).attr('id');
+
+            test = test.substring(3, test.length)
+
+            var deletev = parseInt(test)
+                //console.log(plates[deletev])
+
+            let id = people[deletev]._id
+
+
+            $.post("http://localhost:3000/api/user/upgest", {
+                userID: id
+
+            }, function(data, status) {
+                console.log(data)
+
+            }).then(go => {
+                reloaded()
+            }).then(go => {
+                reloaded2()
+            })
+
+
+
+
+        });
+        $(document).on('click', '.btmog', function() {
+            alert("hy");
+
+
+        });
+    </script>
+
+    <script src="js/Adminscrr.js"></script>
+</body>
+
+</html>

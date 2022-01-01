@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/kcal.png" type="image/gif" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCAL</title>
+    <link rel="stylesheet" href="CSS/sinscrire.css">
+
+</head>
+
+<body>
+    <img class="wave" src="svg/wave (3).svg">
+    <div class="container">
+        <div class="img">
+            <img src="svg/undraw_hello_re_3evm.svg" style="position: relative;top: 46px;">
+            <div class="alert" id="box" style="visibility: hidden;height: 29px; width: 372px;">
+                <span class="closebtn">&times;</span>
+            </div>
+
+        </div>
+        <div class="login-content">
+            <form action="index.html" id="form" class="form">
+                <div style="display: flex;"><img id="ikcal" src="images/kcal.png" style="height: 67px;margin-right: 9%;margin-top: -2%;">
+                    <h2 class="title">inscrire</h2>
+                </div>
+                <div>
+                    <div class="input-div one">
+
+                        <div class="i">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Nom</h5>
+                            <input id="nom" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Prénom</h5>
+                            <input id="prenom" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="div">
+                            <h5>N° Telephone</h5>
+                            <input id="num" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="div">
+                            <h5>e-mail</h5>
+                            <input id="mail" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Mot de passe</h5>
+                            <input id="num" type="password" class="input">
+                        </div>
+                    </div>
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="div" id=''>
+                            <h5>Confirmer Le Mot de passe</h5>
+                            <input id="pass" type="password" class="input">
+                        </div>
+
+                    </div>
+
+                    <input type="button" class="btn" value="s'inscrire">
+
+            </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/sinscrire.js"></script>
+        <script src="js/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".btn").change(function() {
+
+                    $(".closebtn").css("visibility", "visible");
+
+                    $(".alert").css("visibility", "visible");
+                    $(".newDiv").remove()
+                    $('#box').append(
+                        $('<div/>')
+
+                        .addClass("newDiv")
+                        .append("<span/>")
+                        .text("hello world")
+                    );
+
+                })
+                $(".closebtn").click(function() {
+                    $(".closebtn").css("visibility", "hidden");
+                    $(".alert").css("visibility", "hidden");
+                })
+                $(".btn").click(function() {
+
+                    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                    if ($("#mail").val().match(regexEmail)) {
+
+                        $.post("http://localhost:3000/api/user/exis", {
+                            mail: $("#mail").val()
+
+                        }, function(data, status) {
+
+                            console.log(data)
+                            if (data.exi == "false") {
+
+
+
+
+                                //console.log(document.getElementById('input').files[0].path)
+
+                                var formdata = new FormData();
+                                formdata.append("nom", $("#nom").val());
+                                formdata.append("prenom", $("#prenom").val());
+                                formdata.append("num", $("#num").val());
+                                formdata.append("email", $("#mail").val());
+                                formdata.append("pass", $("#pass").val());
+                                formdata.append("rank", "user");
+                                formdata.append("eximg", "false");
+
+
+                                var requestOptions = {
+                                    method: 'POST',
+                                    body: formdata,
+                                    redirect: 'follow'
+
+                                };
+                                var url = 'http://127.0.0.1:5502/conex.html';
+
+
+                                fetch("http://localhost:3000/api/user/store", requestOptions)
+                                    .then(response => response.text())
+                                    .then(result => console.log(result))
+                                    .then(go => document.location.href = url)
+
+                                .catch(error => console.log('error', error));
+
+
+                            } else {
+                                alert("email is used")
+                            }
+                        })
+
+                    } else {
+                        alert("email inpute error");
+                    }
+
+                })
+            })
+        </script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>KCAL</title>
+    <link rel="stylesheet" href="css/conx.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/kcal.png" type="image/gif" />
+
+</head>
+
+<body>
+    <img class="wave" src="svg/wave.svg">
+    <div class="container">
+        <div class="img">
+            <img id="imgcofee" src="svg/Coffee break-amico.svg">
+        </div>
+        <div class="login-content">
+            <fram>
+                <img src="images/kcal.png" style="margin-right: 2%;">
+                <h2 class="title">
+                    Identifiant</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>e-mail</h5>
+                        <input type="text" id="email" class="input">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Mot de passe</h5>
+                        <input type="password" id="mps" class="input">
+                    </div>
+                </div>
+                <a href="http://127.0.0.1:5502/homecalc.html#contact">Mot de passe oublié?</a>
+                <input type="submit" class="btn" value="connexion">
+                <a href="sinscrire.html" style="margin-right: 11%;">Vous n'avez pas de compte ! S'identifier </a>
+            </fram>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btn").click(function() {
+
+                var mps = $("#mps").val()
+                var mail = $("#email").val()
+                var ID;
+                $.post("http://localhost:3000/api/user/login", {
+                    email: mail,
+                    pass: mps
+
+                }, function(data, status) {
+                    if (data.val === undefined) {
+                        console.log('err')
+                    } else if (data.val === 'true') {
+                        ID = data.id;
+                        //var b = document.getElementById('name').value,
+                        if (data.rank === 'user') {
+                            url = 'http://127.0.0.1:5502/client.html?user=' + encodeURIComponent(ID);
+                            //console.log(data)
+                            // console.log(status)
+                            //console.log(data.id)
+                            document.location.href = url;
+                        } else if (data.rank === 'gestionaire') {
+                            url = 'http://127.0.0.1:5502/gestionnaire.html?user=' + encodeURIComponent(ID);
+                            //console.log(data.val)
+                            //console.log(data.id)
+                            document.location.href = url;
+                        } else if (data.rank === 'admin') {
+                            url = 'http://127.0.0.1:5502/admin.html?user=' + encodeURIComponent(ID);
+                            //console.log(data.val)
+                            //console.log(data.id)
+                            document.location.href = url;
+                        }
+                    } else if (data.val === 'false') {
+                        console.log('pass')
+                    } else {
+                        console.log('err2')
+                    }
+                });
+
+
+            })
+        })
+    </script>
+    <script type="text/javascript" src="js/conx.js"></script>
+</body>
+
+</html>

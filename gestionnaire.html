@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="js/owl.carousel.min.js">
+    <title>Gestionnaire Dashboard</title>
+    <link rel="stylesheet" href="css/gest.css">
+    <link rel="icon" href="images/kcal.png" type="image/gif" />
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span><img src="images/kcal2.png" alt="" width="70" style="border-radius: 10px;margin-left: 120%;"></span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="#" id="BT0" class="active"><span class="las la-clipboard-list"></span><span>Gérer Les utilisateurs</span></a>
+                </li>
+                <li>
+                    <a href="#" id="BT5"><span class="las la-user-circle"></span><span>Info compte</span></a>
+                </li>
+                <li>
+                    <a href="#" id="BT6"><span class="las la-power-off"></span><span>Déconnexion</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="header-title">
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="las la-bars"  style="margin-top: 10px;"></span>
+                    </label> Dashboard
+                </h2>
+                <!--<div class="search-wrapper">
+                    <span class="las la-search">
+                    </span>
+                    <input type="search" placeholder="Search here"/>
+                </div>-->
+
+                <div class="user-wrapper">
+                    <img id="userimage1" src="Images/clt.png" width="40px" height="40px" alt="">
+                    <div>
+                        <h4 id="nom12">Mohamed Amine</h4>
+                        <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gestionnaire</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--date(auto)/heure/text/image/nb calories-->
+        <main>
+            <div style="
+            display: flex;
+            flex-flow: row wrap;
+            " class="olcards">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/admn.jpg" alt="repas" style="width:100%;height:100%;border-radius: 15px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="margin-top: 4%;">IDTALAB YOUNES</h1>
+                            <h3>younes12@gmail.com</h3>
+                            <h3>+212610101010</h3>
+                            <h4 style="margin-top: 10%;">Actif depuis <span style="color:coral;">2 Mois.</span> </h4>
+                            <div style="margin-top: 25%;display:flex; margin-left: 35%; ">
+                                <a href="#"><img src="svg/icons8-delete.svg" alt="supprimer" style="width: 40px; height: 40px;"></a>&nbsp;&nbsp;&nbsp;
+                                <a href="#"><img src="svg/image2vector1.svg" id="mdf" alt="modifier" style="width: 40px;"></a>
+                            </div>
+                            <div style="display:flex;margin-top: 25%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/pexels-pixabay-415829.jpg" alt="repas" style="width:100%;height:100%;border-radius: 15px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="margin-top: 4%;">Amina Radi</h1>
+                            <h3>amina20@gmail.com</h3>
+                            <h3>+212612121210</h3>
+                            <h4 style="margin-top: 10%;">Actif depuis <span style="color:coral;">1 Mois.</span> </h4>
+                            <div style="margin-top: 25%;display:flex; margin-left: 35%; ">
+                                <a href="#"><img src="svg/icons8-delete.svg" alt="supprimer" style="width: 40px;height: 40px;"></a>&nbsp;&nbsp;&nbsp;
+                                <a href="#"><img src="svg/image2vector1.svg" id="mdf2" alt="modifier" style="width: 40px;"></a>
+                            </div>
+                            <div style="display:flex;margin-top: 25%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/josh-profile-img1-300x300.jpg" alt="repas" style="width:100%;height:100%;border-radius: 15px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="margin-top: 4%;">Samie Tazi</h1>
+                            <h3>samie14@gmail.com</h3>
+                            <h3>+212610101010</h3>
+                            <h4 style="margin-top: 10%;">Actif depuis <span style="color:coral;">20 Jours.</span> </h4>
+                            <div style="margin-top: 25%;display:flex; margin-left: 35%; ">
+                                <a href="#"><img src="svg/icons8-delete.svg" alt="supprimer" style="width: 40px;height: 40px;"></a>&nbsp;&nbsp;&nbsp;
+                                <a href="#"><img src="svg/image2vector1.svg" id="mdf3" alt="modifier" style="width: 40px;"></a>
+                            </div>
+                            <div style="display:flex;margin-top: 25%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/admn.jpg" alt="repas" style="width:300px;height:300px;border-radius: 10px;filter: blur(4px);">
+                        </div>
+                        <h2 style="position: absolute;margin-top: 28%;margin-left: 36%;">Ajouter</h2>
+                        <img src="https://img.icons8.com/glyph-neue/64/000000/add.png" style="position:absolute;margin-top:38%;margin-left:-10%;" />
+                        <div class="flip-card-back" style="height:130%;">
+                            <h1 style="margin-top: 0.8%;">Ajouter un Client</h1>
+                            <fram id="frm" style="margin-top: 2%;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <!--<input type="file" id="image_uploads" accept="image/png, image/jpeg" style="color: #f1f5f9;">-->
+                                            <div class="new_Btn"><button onclick="filein()">Image Person</button></div>
+                                            <input type="file" id="html_btn" accept="image/png, image/jpeg" style="color: blanchedalmond;" /><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" placeholder="Nom" style="height: 30px;width: 260px;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" placeholder="Prenom" style="height: 30px;width: 260px;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" placeholder="E-mail" style="height: 30px;width: 260px;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" placeholder="Télephone" style="height: 30px;width: 260px;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="password" placeholder="Mot de Passe" style="height: 30px;width: 260px;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="buttons" id="btu1">
+                                                <button class="cta-01"><span>Valider</span></button>
+                                                <button class="cta-02"><span>Effacer</span></button>
+                                            </div>
+                                            <!--<input type="submit" id="btns" value="Valider" style="width: 90px;height: 30px;margin-left: 10%;border-radius: 6px;">
+                                        <input type="button" id="btns" value="Effacer" style="width: 90px;height: 30px;margin-left: 4%;border-radius: 6px;">-->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fram>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <div class="recent-grid" id="F3">
+                <div class="cardd">
+                    <div class="Projects">
+                        <div class="card-headerrr">
+                            <div style="display: flex; padding: 1rem;"><img id="userimage" src="Images/clt.png" alt="" style="border-radius: 50%; height: 80px;">
+                                <h3 id="nom11" style="margin-top: 2.5%; margin-left: 1%;"> Nom Gestionnaire </h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-style-2">
+                                <fram>
+                                    <label for="field1"><span>Nom</span><input type="text" id="nomed" class="input-field" name="field1" v/></label>
+                                    <label for="field6"><span>Pnom</span><input type="text" id="pnomed" class="input-field" name="field6" /></label>
+                                    <label for="field2"><span>Email </span><input type="text" id="emailed" class="input-field" name="field2" value="" /></label>
+                                    <label><span>Telephone</span><input type="text" id="teled" class="input-field" name="field4" value="" /></label>
+                                    <label for="field2"><span>Mot de Passe</span><input type="text" id="mpsed" class="input-field" name="field3" value="" /></label>
+                                    <br>
+                                    <label><span> </span><input type="button" value="Enregistrer" id="bttns" /></label>
+                                </fram>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modification Client</h2>
+            </div>
+            <div class="modal-body">
+                <fram>
+                    <table>
+                        <tr>
+                            <td>Nom</td>
+                            <td><input id="modnom" type="text" class="txt" placeholder="Votre Nom.." /></td>
+                        </tr>
+                        <tr>
+                            <td>Prenom</td>
+                            <td><input id="modpre" type="text" class="txt" placeholder="Votre Prenom.." /></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input id="modema" type="text" class="txt" placeholder="E-mail.." /></td>
+                        </tr>
+                        <tr>
+                            <td>Télephone</td>
+                            <td><input id="modnum" type="text" class="txt" placeholder="Votre Num de Télephone.." /></td>
+                        </tr>
+                        <tr>
+                            <td>Mot de Passe</td>
+                            <td><input id="modpass" type="password" class="txt" placeholder="Mot de Passe.." /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="inputit1" id="btns" value="Valider" style="width: 90px;cursor: pointer; height: 30px;margin-left: 70%;border-radius: 6px;background-color: #000;color: #fff;"></td>
+                            <td><input type="button" class="inputit2" id="btns" value="Photo" style="width: 90px;cursor: pointer;height: 30px;margin-left: 25%;border-radius: 6px;background-color: #000;color: #fff;"></td>
+                        </tr>
+                    </table>
+                </fram>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="Js/jquery-3.4.1.js"></script>
+    <script>
+        var people = []
+        var array = []
+        var file;
+        var delimag = false
+        var userid1;
+
+        function filein() {
+            let input = document.createElement('input');
+            input.type = 'file';
+            input.onchange = _ => {
+                // you can use this method to get file and perform respective operations
+                var files = Array.from(input.files);
+                file = files;
+                console.log(file);
+
+            };
+            input.click();
+
+        }
+
+        function refiller() {
+
+
+            $('.olcards').empty()
+                //console.log(data)
+            $(".olcards").append(`<div class="flip-card" id="inputer" style="height : 360px">
+                    <div class="flip-card-inner" >
+                        <div class="flip-card-front" style="z-index : 50;">
+                            <img src="images/admn.jpg" alt="repas" style="width:300px;height:300px;border-radius: 10px;filter: blur(4px); z-index : 50;">
+                        </div>
+                        <h2 style="position: absolute;margin-top: 28%;margin-left: 36%; z-index : 50;">Ajouter</h2>
+                        <img id="lhmras" src="https://img.icons8.com/glyph-neue/64/000000/add.png" style="position:absolute;z-index : 50;margin-top:38%;margin-left:-10%;" />
+                        <div class="flip-card-back" style="height:106%;">
+                            <h1 style="margin-top: 0.8%;">Ajouter un Client</h1>
+                            <fram  id="frm" style="margin-top: 2%;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <!--<input type="file" id="image_uploads" accept="image/png, image/jpeg" style="color: #f1f5f9;">-->
+                                            <div class="new_Btn"><button id="Imagepers">Image Person</button></div>
+                                            <input type="file" id="html_btn" accept="image/png, image/jpeg" style="color: blanchedalmond;" /><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" id="nom" placeholder="Nom" style="height: 30px;width: 260px;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" id="prnom" placeholder="Prenom" style="height: 30px;width: 260px;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" id="mail" placeholder="E-mail" style="height: 30px;width: 260px;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" id="num" placeholder="Télephone" style="height: 30px;width: 260px;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="password" id="pass" placeholder="Mot de Passe" style="height: 30px;width: 260px;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="buttons" id="btu1">
+                                                <button class="cta-01" id="validerpers"><span>Valider</span></button>
+                                                <button class="cta-02"><span>Effacer</span></button>
+                                            </div>
+                                            <!--<input type="button" id="btns" class="inputit" value="Valider" style="width: 90px;height: 30px;margin-left: 10%;border-radius: 6px;">
+                                        <input type="button" id="btns" value="Effacer" style="width: 90px;height: 30px;margin-left: 4%;border-radius: 6px;">-->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fram>
+                        </div>
+                    </div>
+                </div>`)
+
+
+            for (let i = 0; i < people.length; i++) {
+                // console.log(plate);
+
+                //alert(array[looper])
+                $('.olcards').append(` <div id="all${i}" class="flip-card flipflap${i}">
+                    <div id="fci${i}" class="flip-card-inner">
+                        <div id="fcf${i}" class="flip-card-front">
+                            <img id="ava${i}" src="${people[i].avatar}" alt="repas" style="width:100%;height:100%;border-radius: 15px;">
+                        </div>
+                        <div id"fcb${i}" class="flip-card-back">
+                            <h1 style="margin-top: 4%;">${people[i].nom} ${people[i].prenom}</h1>
+                            <h3 id="mal${i}">${people[i].email}</h3>
+                            <h3id="num${i}">${people[i].num}</h3>
+                            <h4 id="ada${i}" style="margin-top: 10%;">Actif depuis <span id="dat${i}"style="color:coral;">${people[i].createdAt}</span> </h4>
+                            <div id="bba${i}" style="margin-top: 25%;display:flex; margin-left: 35%; ">
+                                <img id="sup${i}" src="svg/icons8-delete.svg"  class="deleter" alt="supprimer" style="width: 40px;height: 40px; position: relative; top: -4.7rem;">&nbsp;&nbsp;&nbsp;
+                                <img id="mdf${i}" src="svg/image2vector1.svg"  class="editter" alt="modifier" style="width: 40px; position: relative; top: -4.7rem;">
+                            </div>
+                            <div style="display:flex;margin-top: 25%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                `);
+
+
+            }
+
+        }
+
+        function arrayfill() {
+            array = []
+            for (let i = 0; i < people.length; i++) {
+                array.push(people[i]._id + i)
+            }
+        }
+        //reeeeeeeeeeeeeba
+        function post2() {
+
+            $.post("http://localhost:3000/api/user/gestter", {
+                rank: "user"
+            }, function(data, status, err) {
+
+
+                //console.log(data)
+
+
+                people = []
+                for (let usi of data.user) {
+                    // console.log(plate);
+
+
+                    people.push(usi);
+
+
+                    //alert(array[looper])
+
+
+
+                }
+                $("#F3").hide()
+                people.reverse()
+                arrayfill()
+                refiller()
+                    //refiller()
+            });
+        }
+        // reeeeeeeee 
+        function reloaded() {
+            //hna
+
+            //console.log(file)
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {},
+                tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            var userid2 = data.user;
+            var lastCharOfuserid = userid2.slice(-1)
+            if (lastCharOfuserid == '#') {
+                userid2 = userid2.slice(0, -1);
+            }
+            //console.log(userid2)
+            var plate;
+            var looper = 0;
+
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {},
+                tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            var userid3 = data.user;
+            var lastCharOfuserid = userid3.slice(-1)
+            if (lastCharOfuserid == '#') {
+                userid3 = userid3.slice(0, -1);
+            }
+            //console.log(userid3)
+
+
+            $.post("http://localhost:3000/api/user/show", {
+                userID: userid3
+
+            }, function(data, status, err) {
+
+
+
+                if (err.responseJSON.response == null) {
+                    document.location.href = "http://127.0.0.1:5502/conex.html";
+                }
+                if (data.response.acess === "true") {
+
+
+                    filinfo()
+                    post2()
+
+                } else {
+                    document.location.href = "http://127.0.0.1:5502/conex.html";
+                }
+                if (data.response.acess == undefined) {
+                    document.location.href = "http://127.0.0.1:5502/conex.html";
+                }
+
+            })
+
+            function filinfo() {
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+                var userid3 = data.user;
+                var lastCharOfuserid = userid3.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid3 = userid3.slice(0, -1);
+                }
+                //console.log(userid3)
+
+
+                $.post("http://localhost:3000/api/user/show", {
+                    userID: userid3
+
+                }, function(data, status) {
+                    //F3
+                    $("#nomed").val(data.response.nom)
+                    $("#pnomed").val(data.response.prenom)
+                    $("#emailed").val(data.response.email)
+                    $("#teled").val(data.response.num)
+                    $("#mpsed").val(data.response.pass)
+                    $("#userimage").attr("src", data.response.avatar);
+                    $("#userimage1").attr("src", data.response.avatar);
+
+                    $("#nom11").html(data.response.prenom + " " + data.response.nom)
+                    $("#nom12").html(data.response.prenom + " " + data.response.nom)
+
+                })
+            }
+        }
+        //jq
+
+        $(document).ready(function() {
+
+
+            reloaded()
+
+
+            $("#BT1").click(function() {
+
+            })
+            $("#BT6").click(function() {
+                var mps1;
+                var mail1;
+
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+                var userid3 = data.user;
+                var lastCharOfuserid = userid3.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid3 = userid3.slice(0, -1);
+                }
+                // console.log(userid3)
+
+
+                $.post("http://localhost:3000/api/user/show", {
+                    userID: userid3
+
+                }, function(data, status) {
+                    // console.log(data)
+                    mps1 = data.response.pass;
+                    mail1 = data.response.email;
+
+                    // console.log(mps1 + " / " + mail1)
+
+                }).then(go => {
+                    goo()
+                }).then(go => {
+                    document.location.href = "http://127.0.0.1:5502/conex.html"
+                })
+
+
+                function goo() {
+                    $.post("http://localhost:3000/api/user/logout", {
+                        email: mail1,
+                        pass: mps1
+
+                    }, function(data, status) {
+                        //console.log(data)
+                    });
+                }
+
+            })
+        })
+        $(document).on('mouseenter', '#inputer', function() {
+            $("#lhmras").fadeOut(150);
+            setTimeout(
+                function() {
+                    $("#lhmras").hide()
+
+
+                }, 110);
+
+
+        })
+        $(document).on('mouseleave', '#inputer', function() {
+
+            setTimeout(
+                function() {
+                    $("#lhmras").show()
+
+
+                }, 120)
+        });
+        $(document).on('click', '#Imagepers', function() {
+            filein()
+
+        });
+        $(document).on('click', '#validerpers', function() {
+
+
+            var formdata = new FormData();
+            if (file == undefined) {
+
+
+                formdata.append("nom", $("#nom").val());
+                formdata.append("prenom", $("#prnom").val());
+                formdata.append("num", $("#num").val());
+                formdata.append("email", $("#mail").val());
+                formdata.append("pass", $("#pass").val());
+                formdata.append("rank", "user");
+                formdata.append("eximg", "false");
+
+
+                var requestOptions = {
+                    method: 'POST',
+                    body: formdata,
+                    redirect: 'follow'
+
+                };
+
+
+
+                fetch("http://localhost:3000/api/user/store", requestOptions)
+                    .then(response => response.text())
+                    .then(result => console.log(result))
+                    .catch(error => console.log('error', error));
+
+            } else {
+
+                formdata.append("nom", $("#nom").val());
+                formdata.append("prenom", $("#prnom").val());
+                formdata.append("num", $("#num").val());
+                formdata.append("email", $("#mail").val());
+                formdata.append("pass", $("#pass").val());
+                formdata.append("rank", "user");
+                formdata.append("eximg", "true");
+                formdata.append("avatar", file[0]);
+
+                var requestOptions = {
+                    method: 'POST',
+                    body: formdata,
+                    redirect: 'follow'
+
+                };
+
+
+
+                fetch("http://localhost:3000/api/user/store", requestOptions)
+                    .then(response => response.text())
+                    .then(result => console.log(result))
+
+                .catch(error => console.log('error', error));
+            }
+            post2()
+
+
+        });
+        $(document).on('click', '.deleter', function(e) {
+            // alert('dd')
+            // alert($(e.target).attr('id'))
+
+            var test = $(e.target).attr('id');
+            console.log($(e.target).attr('id'))
+
+            test = test.substring(3, test.length)
+
+
+            var data
+            var id
+            data = array[parseInt(test)].substring(0, 24)
+            id = array[parseInt(test)].substring(24, array[parseInt(test)].length)
+                //alert(data + " /  " + id)
+            $.post("http://localhost:3000/api/user/delete", {
+                userID: data
+            }, function(data, status) {
+
+            })
+
+            $(`#all${id}`).hide()
+            $(`.fliplap${id}`).hide()
+
+            $("#userimage1").click(function() {
+
+                filein()
+
+            })
+
+        })
+        $(document).on('click', '.editter', function(e) {
+
+            var deleteid
+            var test = $(e.target).attr('id');
+
+            test = test.substring(3, test.length)
+
+            var deletev = parseInt(test)
+                //console.log(plates[deletev])
+
+            deleteid = people[deletev]._id
+
+
+            //alert('hm' + test + "  " + plates[0].nom)
+            $(".modal").show()
+
+            $("#modnom").val(people[deletev].nom)
+
+            $("#modpre").val(people[deletev].prenom)
+            $("#modema").val(people[deletev].email)
+            $("#modnum").val(people[deletev].num)
+
+
+
+            $("#modpass").val(people[deletev].pass)
+
+
+
+            userid1 = deleteid;
+
+
+
+
+
+
+
+
+        })
+        $(document).on('click', '.inputit2', function(e) {
+
+            filein()
+        })
+        $(document).on('click', '.inputit1', function(e) {
+            if (file == undefined) {
+
+
+
+                var formdata = new FormData();
+                formdata.append("userID", (userid1));
+                formdata.append("nom", ($("#modnom").val()));
+
+                formdata.append("prenom", ($("#modpre").val()));
+                formdata.append("num", ($("#modnum").val()));
+                formdata.append("email", ($("#modema").val()));
+                formdata.append("pass", ($("#modpass").val()));
+                formdata.append("rank", "user");
+                formdata.append("eximg", "false");
+
+            } else {
+                var formdata = new FormData();
+                formdata.append("userID", (userid1));
+                formdata.append("nom", ($("#modnom").val()));
+                formdata.append("prenom", ($("#modpre").val()));
+                formdata.append("num", ($("#modnum").val()));
+                formdata.append("email", ($("#modema").val()));
+                formdata.append("pass", ($("#modpass").val()));
+                formdata.append("rank", "user");
+                formdata.append("eximg", "true");
+                formdata.append("avatar", file[0]);
+
+            }
+
+            var requestOptions = {
+                method: 'POST',
+                body: formdata,
+                redirect: 'follow'
+
+            };
+
+
+
+            fetch("http://localhost:3000/api/user/update", requestOptions)
+                .then(response => response.text())
+                .then(result => post2())
+                .then(go => {
+                    $(".modal").hide()
+                })
+                .catch(error => console.log('error', error));
+
+            file = undefined
+            userid1 = null
+
+        })
+    </script>
+    <script src="js/gest.js"></script>
+</body>
+
+</html>

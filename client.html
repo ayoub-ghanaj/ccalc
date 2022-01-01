@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="js/owl.carousel.min.js">
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="icon" href="images/kcal.png" type="image/gif" />
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span><img src="images/kcal2.png" alt="" width="70" style="border-radius: 10px;margin-left: 120%;"></span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+
+                <li id="BT1" style="cursor: pointer;">
+                    <a><span class="las la-clipboard-list"></span><span>Gérer Les repas</span></a>
+                </li>
+                <li id="BT5" style="cursor: pointer;">
+                    <a><span class="las la-user-circle"></span><span>Info compte</span></a>
+                </li>
+                <li id="BT6" style="cursor: pointer;">
+                    <a><span class="las la-power-off"></span><span>Déconnexion</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="header-title">
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="las la-bars"  style="margin-top: 10px;"></span>
+                    </label> Dashboard
+                </h2>
+                <!--<div class="search-wrapper">
+                    <span class="las la-search">
+                    </span>
+                    <input type="search" placeholder="Search here"/>
+                </div>-->
+
+                <div class="user-wrapper">
+                    <img id="userimage" src="Images/clt.png" width="40px" height="40px" alt="">
+                    <div>
+                        <h4 id="nom11">Nom Client</h4>
+                        <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Client</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--date(auto)/heure/text/image/nb calories-->
+        <main>
+
+
+            <!---- main-->
+            <div id="foodls" style=" display: flex; flex-flow: row wrap; " class="olcards">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/plat1.jpg" alt="repas" style="width:100%;height:100%;border-radius: 15px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="margin-top: 4%;">Breakfast</h1>
+                            <div style="margin-top: 25%;display:flex; margin-left: 34%; ">
+                                <a href="#"><img src="svg/icons8-delete.svg" alt="supprimer" style="width: 40px; height: 40px;"></a>&nbsp;&nbsp;&nbsp;
+                                <a href="#"><img src="svg/image2vector1.svg" id="mdf" alt="modifier" style="width: 40px;"></a>
+                            </div>
+                            <div style="display:flex;margin-top: 25%;">
+                                <p style="margin-left: 6%;">Heure : 09:15 </p>
+                                <p style="margin-left: 30%;"> 1400 Kcal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="lunch.jpg" alt="repas" style="width:100%;height:100%;border-radius: 15px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="margin-top: 4%;">Lunch</h1>
+                            <div style="margin-top: 25%;display:flex; margin-left: 34%; ">
+                                <a href="#"><img src="svg/icons8-delete.svg" alt="supprimer" style="width: 40px; height: 40px;"></a>&nbsp;&nbsp;&nbsp;
+                                <a href="#"><img src="svg/image2vector1.svg" id="mdf2" alt="modifier" style="width: 40px;"></a>
+                            </div>
+                            <div style="display:flex;margin-top: 25%;">
+                                <p style="margin-left: 6%;">Heure : 12:15 </p>
+                                <p style="margin-left: 30%;"> 1500 Kcal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="dinner.jpg" alt="repas" style="width:100%;height:100%;border-radius: 15px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="margin-top: 4%;">Dinner</h1>
+                            <div style="margin-top: 25%;display:flex; margin-left: 34%; ">
+                                <a href="#"><img src="svg/icons8-delete.svg" alt="supprimer" style="width: 40px; height: 40px;"></a>&nbsp;&nbsp;&nbsp;
+                                <a href="#"><img src="svg/image2vector1.svg" id="mdf3" alt="modifier" style="width: 40px;"></a><br>
+
+                            </div>
+                            <div style="display:flex;margin-top: 25%;">
+                                <p style="margin-left: 6%;">Heure : 22:15 </p>
+                                <p style="margin-left: 30%;"> 900 Kcal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="inputer" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="z-index: 50;">
+                            <img src="images/plat1.jpg" alt="repas" style="width:300px;height:300px;border-radius: 10px;filter: blur(4px); z-index: 50; ">
+                        </div>
+                        <h2 style="position: absolute;margin-top: 28%;margin-left: 36%; z-index: 50;">Ajouter</h2>
+                        <img id="lhmras" src="https://img.icons8.com/glyph-neue/64/000000/add.png" style="position:absolute;margin-top:38%;margin-left:-10%; z-index: 50;" />
+                        <div class="flip-card-back" style="z-index: 50;">
+                            <h1 style="margin-top: 0.8%; z-index: 50;">Ajouter une repas</h1>
+                            <fram id="frm" style="margin-top: 2%; z-index: 100;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <!--<input type="file" id="image_uploads" accept="image/png, image/jpeg" style="color: #f1f5f9;>-->
+                                            <div class="new_Btn" id="input1"><button onclick="filein()">Image Repas</button></div><br>
+                                            <!--   <input type="file" id="inputer" class="html_btn" accept="image/png, image/jpeg, image/jpg" style="color: blanchedalmond; display: none;" /><br>-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" id="nom1" placeholder="Nom repas" style="height: 30px;width: 260px; z-index: 100;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" placeholder="Nombre de Calories" id="calo1" style="height: 30px;width: 260px; z-index: 100;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="datetime-local" placeholder="Date et Heure" id="time1" style="height: 30px;width: 260px; z-index: 100;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="buttons">
+                                                <button id="valent" class="cta-01  platein"><span>Valider</span></button>
+                                                <button class="cta-02"><span>Effacer</span></button>
+                                            </div>
+                                            <!--<input type="submit" id="btns" value="Valider" style="width: 90px;height: 30px;margin-left: 10%;border-radius: 6px;">
+                                           <input type="button" id="btns" value="Effacer" style="width: 90px;height: 30px;margin-left: 4%;border-radius: 6px;">-->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fram>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <div class="recent-grid" id="F3" style="display: none;">
+                <div class="cardd">
+                    <div class="Projects">
+                        <div class="card-headerrr">
+
+                            <div style="display: flex; padding: 1rem;"><img id="userimage1" src="Images/clt.png" alt="" style="border-radius: 50%; height: 80px;"> <br><label id="nom12" style="vertical-align: middle; position: relative; top: 1rem; left: 1rem; font-family: initial;">NOM</label>
+                                <h3 id="fulled" style="margin-top: 2.5%; margin-left: 1%;"> </h3>
+                                <button id="imgreset" class="btn69 btn69-delete" style="position: relative;display: flex;top: 2.4rem; right: 6.4rem;">
+                                    <span class="mdi mdi-delete mdi-24px"></span>
+                                    <span class="mdi mdi-delete-empty mdi-24px"></span>
+                                    <span >Delete Image</span>
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="fram-style-2">
+                                <fram>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <span>Nom</span>
+                                            </td>
+                                            <td>
+                                                <input id="nomed" type="text" class="input-field" name="field2" autofocus/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Preom</span>
+                                            </td>
+                                            <td>
+                                                <input id="pnomed" type="text" class="input-field" name="field2" autofocus/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Email </span>
+                                            </td>
+                                            <td>
+                                                <input id="emailed" type="text" class="input-field" name="field2" value="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Telephone</span>
+                                            </td>
+                                            <td>
+                                                <input id="teled" type="text" class="input-field" name="field2" value="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <span>Mot de Passe</span>
+                                            </td>
+                                            <td>
+                                                <input id="mpsed" type="password" class="input-field" name="field2" value="" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <input type="button" value="Enregistrer" id="enregisterbtn" />
+                                            </td>
+                                            <td>
+                                                <button id="accreset" class="btn69 btn69-delete">
+                                                    <span class="mdi mdi-delete mdi-24px"></span>
+                                                    <span class="mdi mdi-delete-empty mdi-24px"></span>
+                                                    <span >Delete Account</span>
+                                                  </button>
+                                            </td>
+                                        </tr>
+                                        <br>
+
+
+                                    </table>
+                                </fram>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- modifier module-->
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modification Repas</h2>
+            </div>
+            <div class="modal-body">
+                <fram>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <div class="new_Btn"><button onclick="filein()">Image Repas</button></div>
+                            <!--<input type="file" id="html_btn" class="html_btn" accept="image/png, image/jpeg" style="color: blanchedalmond;" /><br></td>-->
+                        </tr>
+                        <tr>
+                            <td>Type Repas</td>
+                            <td><input id="modnom" type="text" placeholder="Nom repas" style="height: 30px;width: 200px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Nb Calories</td>
+                            <td><input id="modcalo" type="text" placeholder="Nombre de Calories" style="height: 30px;width: 200px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Date Heure</td>
+                            <td><input id="moddate" type="datetime-local" placeholder="Date et Heure" style="height: 30px;width: 200px;"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="modedite" id="btns" value="Valider" style="width: 90px;cursor: pointer; height: 30px;margin-left: 70%;border-radius: 6px;background-color: #000;color: #fff;"></td>
+                            <td><input type="button" class="modedite2" id="btns" value="Effacer" style="width: 90px;cursor: pointer;height: 30px;margin-left: 25%;border-radius: 6px;background-color: #000;color: #fff;"></td>
+                        </tr>
+                    </table>
+                </fram>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="Js/jquery-3.4.1.js"></script>
+
+    <script>
+        var file
+        var deleteid = 1
+        var delimg = false;
+        var array = []
+
+
+        function refiller() {
+            $('#foodls').empty()
+                //console.log(data)
+            $("#foodls").append(`
+                        <div id="inputer" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="z-index: 50;">
+                            <img src="images/plat1.jpg" alt="repas" style="width:300px;height:300px;border-radius: 10px;filter: blur(4px); z-index: 50; ">
+                        </div>
+                        <h2 style="position: absolute;margin-top: 28%;margin-left: 36%; z-index: 50;">Ajouter</h2>
+                        <img id="lhmras" src="https://img.icons8.com/glyph-neue/64/000000/add.png" style="position:absolute;margin-top:38%;margin-left:-10%; z-index: 50;" />
+                        <div class="flip-card-back" style="z-index: 50;">
+                            <h1 style="margin-top: 0.8%; z-index: 50;">Ajouter une repas</h1>
+                            <fram id="frm" style="margin-top: 2%; z-index: 100;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <!--<input type="file" id="image_uploads" accept="image/png, image/jpeg" style="color: #f1f5f9;>-->
+                                            <div class="new_Btn" id="input1"><button onclick="filein()">Image Repas</button></div><br>
+                                            <!--   <input type="file" id="inputer" class="html_btn" accept="image/png, image/jpeg, image/jpg" style="color: blanchedalmond; display: none;" /><br>-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" id="nom1" placeholder="Nom repas" style="height: 30px;width: 260px; z-index: 100;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" placeholder="Nombre de Calories" id="calo1" style="height: 30px;width: 260px; z-index: 100;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="datetime-local" placeholder="Date et Heure" id="time1" style="height: 30px;width: 260px; z-index: 100;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="buttons">
+                                                <button id="valent" class="cta-01  platein"><span>Valider</span></button>
+                                                <button class="cta-02"><span>Effacer</span></button>
+                                            </div>
+                                            <!--<input type="submit" id="btns" value="Valider" style="width: 90px;height: 30px;margin-left: 10%;border-radius: 6px;">
+                                           <input type="button" id="btns" value="Effacer" style="width: 90px;height: 30px;margin-left: 4%;border-radius: 6px;">-->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fram>
+                        </div>
+                    </div>
+                </div>`)
+
+            for (let i = 0; i < plates.length; i++) {
+                // console.log(plate);
+
+                //alert(array[looper])
+                $('#foodls').append(`<div id="plate${plates[i]._id}" class="flip-card">
+                    <div  class="flip-card-inner" style=" z-index: 50;">
+                        <div class="flip-card-front" style=" z-index: 50;" >
+                            <img id="imapla${i}" src="${plates[i].image}" alt="repas" style="width:100%;height:100%;border-radius: 15px; z-index: 50;">
+                        </div>
+                        <div class="flip-card-back" style=" z-index: 150;">
+                            <h1  id="nompl${i}" style="margin-top: 4%;">${plates[i].nom}</h1>
+                            <div style="margin-top: 25%;display:flex; margin-left: 34%; " style=" z-index: 150;">
+                                 <img id="delet${i}"  class="deleter" src="svg/icons8-delete.svg" alt="supprimer" style="width: 40px; height: 40px; cursor:pointer ; z-index: 150;">&nbsp;&nbsp;&nbsp;
+                                 <img id="supp${i}" class="editter" src="svg/image2vector1.svg"  alt="modifier" style="width: 40px; cursor:pointer ;z-index: 150;">
+                                
+                            </div>
+                            <div style="display:flex;margin-top: 25%;">
+                                <p id="heur${i}" style="margin-left: 6%;">Heure : ${plates[i].heur} </p>
+                                <p id="calo${i}" style="margin-left: 30%;"> ${plates[i].calo} Kcal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                `);
+
+
+                $("#foodls").show()
+                $("BT1").click()
+
+
+            }
+
+        }
+        //
+        function sortat() {
+            let v;
+
+            for (let i = 0; i < plates.length; i++) {
+                v = i
+                for (let t = i + 1; t < plates.length; t++) {
+
+                    //console.log(parseInt(plates[i].date.substring(5, 7)) + "i")
+                    //console.log(parseInt(plates[t].date.substring(5, 7)) + "t")
+                    //console.log(parseInt(plates[i].date.substring(5, 7)) < parseInt(plates[t].date.substring(5, 7)) & (true))
+                    //console.log((parseInt(plates[i].date.substring(0, 4)) < parseInt(plates[t].date.substring(0, 4))) & (parseInt(plates[i].date.substring(5, 7)) < parseInt(plates[t].date.substring(5, 7))) & (parseInt(plates[i].date.substring(8, 10)) < parseInt(plates[t].date.substring(8, 10))))
+                    if ((parseInt(plates[i].date.substring(0, 4)) < parseInt(plates[t].date.substring(0, 4)))) {
+                        v = t
+
+                    } else if ((parseInt(plates[i].date.substring(0, 4)) == parseInt(plates[t].date.substring(0, 4)))) {
+                        if ((parseInt(plates[i].date.substring(5, 7)) < parseInt(plates[t].date.substring(5, 7)))) {
+                            v = t
+
+                        } else if ((parseInt(plates[i].date.substring(5, 7)) == parseInt(plates[t].date.substring(5, 7)))) {
+                            if ((parseInt(plates[i].date.substring(8, 10)) < parseInt(plates[t].date.substring(8, 10)))) {
+                                v = t
+
+                            }
+                        } else if ((parseInt(plates[i].date.substring(8, 10)) == parseInt(plates[t].date.substring(8, 10)))) {
+                            if ((parseInt(plates[i].heur.substring(0, 2)) < parseInt(plates[t].heur.substring(0, 2)))) {
+                                v = t
+                            }
+                        } else if ((parseInt(plates[i].heur.substring(2, 4)) == parseInt(plates[t].heur.substring(2, 4)))) {
+                            if ((parseInt(plates[i].heur.substring(2, 4)) < parseInt(plates[t].heur.substring(2, 4)))) {
+                                v = t
+                            }
+                        }
+                    }
+
+                }
+
+                let id = plates[i]._id
+                let nom = plates[i].nom
+                let calo = plates[i].calo
+                let date = plates[i].date
+                let heur = plates[i].heur
+                let image = plates[i].image
+
+                plates[i]["_id"] = plates[v]._id
+                plates[i]["nom"] = plates[v].nom
+                plates[i]["calo"] = plates[v].calo
+                plates[i]["date"] = plates[v].date
+                plates[i]["heur"] = plates[v].heur
+                plates[i]["image"] = plates[v].image
+
+                plates[v]["_id"] = id
+                plates[v]["nom"] = nom
+                plates[v]["calo"] = calo
+                plates[v]["date"] = date
+                plates[v]["image"] = image
+
+            }
+            array = []
+            for (let i = 0; i < plates.length; i++) {
+                array.push(plates[i]._id + i)
+            }
+        }
+        //
+
+        function reloaded1() {
+
+
+            // console.log(file)
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {},
+                tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            var userid2 = data.user;
+            var lastCharOfuserid = userid2.slice(-1)
+            if (lastCharOfuserid == '#') {
+                userid2 = userid2.slice(0, -1);
+            }
+            // console.log(userid2)
+            var plate;
+
+
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {},
+                tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            var userid3 = data.user;
+            var lastCharOfuserid = userid3.slice(-1)
+            if (lastCharOfuserid == '#') {
+                userid3 = userid3.slice(0, -1);
+            }
+            //console.log(userid3)
+
+
+
+
+            $.post("http://localhost:3000/api/plate/plates", {
+                user: userid2
+
+            }, function(data, status) {
+                $('#foodls').empty()
+                    //console.log(data)
+
+
+                plates = []
+                for (plate of data.plate) {
+
+
+                    plates.push(plate);
+
+
+
+                    //<p id="info${looper}" style="visibility : hidden">${plate._id}${looper}</p>
+
+                }
+                sortat()
+                refiller()
+                $("#foodls").show()
+            });
+
+
+        }
+
+
+        function filein() {
+            let input = document.createElement('input');
+            input.type = 'file';
+            input.onchange = _ => {
+                // you can use this method to get file and perform respective operations
+                var files = Array.from(input.files);
+                file = files;
+                console.log(file);
+
+            };
+            input.click();
+
+        }
+
+        var plates = []
+
+
+        $(document).ready(function() {
+
+
+
+            if (true) {
+                reloaded()
+                continu()
+
+            }
+
+            /*
+                        function sortat() {
+                            let v;
+
+                            for (let i = 0; i < plates.length; i++) {
+                                v = i
+                                for (let t = i + 1; t < plates.length; t++) {
+
+                                    //console.log(parseInt(plates[i].date.substring(5, 7)) + "i")
+                                    //console.log(parseInt(plates[t].date.substring(5, 7)) + "t")
+                                    //console.log(parseInt(plates[i].date.substring(5, 7)) < parseInt(plates[t].date.substring(5, 7)) & (true))
+                                    //console.log((parseInt(plates[i].date.substring(0, 4)) < parseInt(plates[t].date.substring(0, 4))) & (parseInt(plates[i].date.substring(5, 7)) < parseInt(plates[t].date.substring(5, 7))) & (parseInt(plates[i].date.substring(8, 10)) < parseInt(plates[t].date.substring(8, 10))))
+                                    if ((parseInt(plates[i].date.substring(0, 4)) < parseInt(plates[t].date.substring(0, 4)))) {
+                                        v = t
+
+                                    } else if ((parseInt(plates[i].date.substring(0, 4)) == parseInt(plates[t].date.substring(0, 4)))) {
+                                        if ((parseInt(plates[i].date.substring(5, 7)) < parseInt(plates[t].date.substring(5, 7)))) {
+                                            v = t
+
+                                        } else if ((parseInt(plates[i].date.substring(5, 7)) == parseInt(plates[t].date.substring(5, 7)))) {
+                                            if ((parseInt(plates[i].date.substring(8, 10)) < parseInt(plates[t].date.substring(8, 10)))) {
+                                                v = t
+
+                                            }
+                                        } else if ((parseInt(plates[i].date.substring(8, 10)) == parseInt(plates[t].date.substring(8, 10)))) {
+                                            if ((parseInt(plates[i].heur.substring(0, 2)) < parseInt(plates[t].heur.substring(0, 2)))) {
+                                                v = t
+                                            }
+                                        } else if ((parseInt(plates[i].heur.substring(2, 4)) == parseInt(plates[t].heur.substring(2, 4)))) {
+                                            if ((parseInt(plates[i].heur.substring(2, 4)) < parseInt(plates[t].heur.substring(2, 4)))) {
+                                                v = t
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                                let id = plates[i]._id
+                                let nom = plates[i].nom
+                                let calo = plates[i].calo
+                                let date = plates[i].date
+                                let heur = plates[i].heur
+                                let image = plates[i].image
+
+                                plates[i]["_id"] = plates[v]._id
+                                plates[i]["nom"] = plates[v].nom
+                                plates[i]["calo"] = plates[v].calo
+                                plates[i]["date"] = plates[v].date
+                                plates[i]["heur"] = plates[v].heur
+                                plates[i]["image"] = plates[v].image
+
+                                plates[v]["_id"] = id
+                                plates[v]["nom"] = nom
+                                plates[v]["calo"] = calo
+                                plates[v]["date"] = date
+                                plates[v]["image"] = image
+
+                            }
+                            array = []
+                            for (let i = 0; i < plates.length; i++) {
+                                array.push(plates[i]._id + i)
+                            }
+                        }
+            */
+            function refiller() {
+                $('#foodls').empty()
+                    //console.log(data)
+                $("#foodls").append(`
+                        <div id="inputer" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="z-index: 50;">
+                            <img src="images/plat1.jpg" alt="repas" style="width:300px;height:300px;border-radius: 10px;filter: blur(4px); z-index: 50; ">
+                        </div>
+                        <h2 style="position: absolute;margin-top: 28%;margin-left: 36%; z-index: 50;">Ajouter</h2>
+                        <img id="lhmras" src="https://img.icons8.com/glyph-neue/64/000000/add.png" style="position:absolute;margin-top:38%;margin-left:-10%; z-index: 50;" />
+                        <div class="flip-card-back" style="z-index: 50;">
+                            <h1 style="margin-top: 0.8%; z-index: 50;">Ajouter une repas</h1>
+                            <fram id="frm" style="margin-top: 2%; z-index: 100;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <!--<input type="file" id="image_uploads" accept="image/png, image/jpeg" style="color: #f1f5f9;>-->
+                                            <div class="new_Btn" id="input1"><button onclick="filein()">Image Repas</button></div><br>
+                                            <!--   <input type="file" id="inputer" class="html_btn" accept="image/png, image/jpeg, image/jpg" style="color: blanchedalmond; display: none;" /><br>-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" id="nom1" placeholder="Nom repas" style="height: 30px;width: 260px; z-index: 100;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" placeholder="Nombre de Calories" id="calo1" style="height: 30px;width: 260px; z-index: 100;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="datetime-local" placeholder="Date et Heure" id="time1" style="height: 30px;width: 260px; z-index: 100;" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="buttons">
+                                                <button id="valent" class="cta-01  platein"><span>Valider</span></button>
+                                                <button class="cta-02"><span>Effacer</span></button>
+                                            </div>
+                                            <!--<input type="submit" id="btns" value="Valider" style="width: 90px;height: 30px;margin-left: 10%;border-radius: 6px;">
+                                           <input type="button" id="btns" value="Effacer" style="width: 90px;height: 30px;margin-left: 4%;border-radius: 6px;">-->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fram>
+                        </div>
+                    </div>
+                </div>`)
+
+                for (let i = 0; i < plates.length; i++) {
+                    // console.log(plate);
+
+                    //alert(array[looper])
+                    $('#foodls').append(`<div id="plate${plates[i]._id}" class="flip-card">
+                    <div  class="flip-card-inner" style=" z-index: 50;">
+                        <div class="flip-card-front" style=" z-index: 50;" >
+                            <img id="imapla${i}" src="${plates[i].image}" alt="repas" style="width:100%;height:100%;border-radius: 15px; z-index: 50;">
+                        </div>
+                        <div class="flip-card-back" style=" z-index: 150;">
+                            <h1  id="nompl${i}" style="margin-top: 4%;">${plates[i].nom}</h1>
+                            <div style="margin-top: 25%;display:flex; margin-left: 34%; " style=" z-index: 150;">
+                                 <img id="delet${i}"  class="deleter" src="svg/icons8-delete.svg" alt="supprimer" style="width: 40px; height: 40px; cursor:pointer ; z-index: 150;">&nbsp;&nbsp;&nbsp;
+                                 <img id="supp${i}" class="editter" src="svg/image2vector1.svg"  alt="modifier" style="width: 40px; cursor:pointer ;z-index: 150;">
+                                
+                            </div>
+                            <div style="display:flex;margin-top: 25%;">
+                                <p id="heur${i}" style="margin-left: 6%;">Heure : ${plates[i].heur} </p>
+                                <p id="calo${i}" style="margin-left: 30%;"> ${plates[i].calo} Kcal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                `);
+
+
+                }
+
+            }
+
+            function continu() {
+
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+                var userid3 = data.user;
+                var lastCharOfuserid = userid3.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid3 = userid3.slice(0, -1);
+                }
+                // console.log(userid3)
+
+
+                $.post("http://localhost:3000/api/user/show", {
+                    userID: userid3
+
+                }, function(data, status) {
+                    $("#nomed").val(data.response.nom)
+                    $("#pnomed").val(data.response.prenom)
+                    $("#emailed").val(data.response.email)
+                    $("#teled").val(data.response.num)
+                    $("#mpsed").val(data.response.pass)
+                    if (data.response.avatar == "Images/clt.png") {
+                        $("#userimage").attr("src", data.response.avatar);
+                        $("#userimage1").attr("src", data.response.avatar);
+                    } else {
+                        $("#userimage").attr("src", "/uploads/" + data.response.avatar);
+                        $("#userimage1").attr("src", "/uploads/" + data.response.avatar);
+                    }
+                    $("#nom11").html(data.response.prenom + data.response.nom)
+
+                })
+            };
+
+            $("#inputer").mouseenter(function() {
+                $("#lhmras").fadeOut(200);
+                setTimeout(
+                    function() {
+                        $("#lhmras").hide()
+
+
+                    }, 150);
+
+
+            })
+            $("#inputer").mouseleave(function() {
+                setTimeout(
+                    function() {
+                        $("#lhmras").show()
+                    }, 150);
+            })
+            $("#BT6").click(function() {
+                //alert("hy")
+                var mps1;
+                var mail1;
+
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+                var userid3 = data.user;
+                var lastCharOfuserid = userid3.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid3 = userid3.slice(0, -1);
+                }
+                // console.log(userid3)
+
+
+                $.post("http://localhost:3000/api/user/show", {
+                    userID: userid3
+
+                }, function(data, status) {
+                    // console.log(data)
+                    mps1 = data.response.pass;
+                    mail1 = data.response.email;
+
+                    // console.log(mps1 + " / " + mail1)
+
+                }).then(go => {
+                    goo()
+                }).then(go => {
+                    document.location.href = "http://127.0.0.1:5502/conex.html"
+                })
+
+
+                function goo() {
+                    $.post("http://localhost:3000/api/user/logout", {
+                        email: mail1,
+                        pass: mps1
+
+                    }, function(data, status) {
+                        //console.log(data)
+                    });
+                }
+
+
+            })
+            $(".platein").click(function() {
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+
+                var userid1 = data.user;
+                var lastCharOfuserid = userid1.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid1 = userid1.slice(0, -1);
+                }
+                //alert(userid1)
+                //console.log(document.getElementById('input').files[0])
+                // console.log(($("#time1").val().toString()).substring(0, 10) + " / " + ($("#time1").val().toString()).substring(11, 17) + "  / " + $("#nom1").val() + " / " + $("#calo1").val() + " / " + userid1)
+                // console.log(file)
+                //alert('ss')
+                var formdata = new FormData();
+                formdata.append("user", userid1);
+                formdata.append("nom", $("#nom1").val());
+                formdata.append("calo", $("#calo1").val());
+                formdata.append("heur", ($("#time1").val()).substring(11, 17));
+                formdata.append("date", ($("#time1").val()).substring(0, 10));
+
+                formdata.append("image", file[0]);
+
+                var requestOptions = {
+                    method: 'POST',
+                    body: formdata,
+                    redirect: 'follow'
+
+                };
+
+
+
+                fetch("http://localhost:3000/api/plate/store", requestOptions)
+                    .then(response => response.text())
+                    .then(result => console.log(result))
+                    .then(go => reloaded1())
+                    .catch(error => console.log('error', error));
+
+
+            })
+            $("#BT1").click(function() {
+                reloaded1()
+            })
+            $(".btn69").click(function() {
+                delimg = true
+                $("#userimage1").attr("src", "images/clt.png");
+
+            })
+
+            function reloaded() {
+                //hna
+
+                //console.log(file)
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+                var userid2 = data.user;
+                var lastCharOfuserid = userid2.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid2 = userid2.slice(0, -1);
+                }
+                //console.log(userid2)
+                var plate;
+
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+                var userid3 = data.user;
+                var lastCharOfuserid = userid3.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid3 = userid3.slice(0, -1);
+                }
+                //console.log(userid3)
+
+
+                $.post("http://localhost:3000/api/user/show", {
+                    userID: userid3
+
+                }, function(data, status, err) {
+
+
+
+                    if (err.responseJSON.response == null) {
+                        document.location.href = "http://127.0.0.1:5502/conex.html";
+                    }
+                    if (data.response.acess === "true") {
+                        post2()
+                        filinfo()
+                        $("#foodls").show()
+
+                    } else {
+                        document.location.href = "http://127.0.0.1:5502/conex.html";
+                    }
+                    if (data.response.acess == undefined) {
+                        document.location.href = "http://127.0.0.1:5502/conex.html";
+                    }
+
+                })
+
+                function filinfo() {
+
+                    var url = document.location.href,
+                        params = url.split('?')[1].split('&'),
+                        data = {},
+                        tmp;
+                    for (var i = 0, l = params.length; i < l; i++) {
+                        tmp = params[i].split('=');
+                        data[tmp[0]] = tmp[1];
+                    }
+                    var userid3 = data.user;
+                    var lastCharOfuserid = userid3.slice(-1)
+                    if (lastCharOfuserid == '#') {
+                        userid3 = userid3.slice(0, -1);
+                    }
+                    //console.log(userid3)
+
+
+                    $.post("http://localhost:3000/api/user/show", {
+                        userID: userid3
+
+                    }, function(data, status) {
+                        $("#nomed").val(data.response.nom)
+                        $("#pnomed").val(data.response.prenom)
+                        $("#emailed").val(data.response.email)
+                        $("#teled").val(data.response.num)
+                        $("#mpsed").val(data.response.pass)
+                        $("#userimage").attr("src", data.response.avatar);
+                        $("#userimage1").attr("src", data.response.avatar);
+
+                        $("#nom11").html(data.response.prenom + " " + data.response.nom)
+                        $("#nom12").html(data.response.prenom + " " + data.response.nom)
+
+                    })
+                }
+
+                function post2() {
+
+                    $.post("http://localhost:3000/api/plate/plates", {
+                        user: userid2
+
+                    }, function(data, status) {
+                        $('#foodls').empty()
+                            //console.log(data)
+
+                        plates = []
+                        for (plate of data.plate) {
+                            // console.log(plate);
+
+                            plates.push(plate);
+
+                            //alert(array[looper])
+
+
+
+                        }
+                        sortat()
+                        refiller()
+                    });
+                }
+
+            }
+
+            //-----------------------------------------------------------------------------------------------
+            /*  function reloaded1() {
+
+
+                  // console.log(file)
+                  var url = document.location.href,
+                      params = url.split('?')[1].split('&'),
+                      data = {},
+                      tmp;
+                  for (var i = 0, l = params.length; i < l; i++) {
+                      tmp = params[i].split('=');
+                      data[tmp[0]] = tmp[1];
+                  }
+                  var userid2 = data.user;
+                  var lastCharOfuserid = userid2.slice(-1)
+                  if (lastCharOfuserid == '#') {
+                      userid2 = userid2.slice(0, -1);
+                  }
+                  // console.log(userid2)
+                  var plate;
+
+
+                  var url = document.location.href,
+                      params = url.split('?')[1].split('&'),
+                      data = {},
+                      tmp;
+                  for (var i = 0, l = params.length; i < l; i++) {
+                      tmp = params[i].split('=');
+                      data[tmp[0]] = tmp[1];
+                  }
+                  var userid3 = data.user;
+                  var lastCharOfuserid = userid3.slice(-1)
+                  if (lastCharOfuserid == '#') {
+                      userid3 = userid3.slice(0, -1);
+                  }
+                  //console.log(userid3)
+
+
+
+
+                  $.post("http://localhost:3000/api/plate/plates", {
+                      user: userid2
+
+                  }, function(data, status) {
+                      $('#foodls').empty()
+                          //console.log(data)
+
+
+                      plates = []
+                      for (plate of data.plate) {
+
+
+                          plates.push(plate);
+
+
+
+                          //<p id="info${looper}" style="visibility : hidden">${plate._id}${looper}</p>
+
+                      }
+                      sortat()
+                      refiller()
+                  });
+
+
+              }*/
+            //-----------------------------------------------------------------------------------------------
+            $(".modedite2").click(function() {
+                //alert($("#moddate").val())
+            })
+            $(".modedite").click(function() {
+                var id = deleteid
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+
+                var userid1 = data.user;
+                var lastCharOfuserid = userid1.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid1 = userid1.slice(0, -1);
+                }
+
+                //console.log(document.getElementById('input').files[0])
+                //console.log(($("#time1").val().toString()).substring(0, 10) + " / " + ($("#time1").val().toString()).substring(11, 17) + "  / " + $("#nom1").val() + " / " + $("#calo1").val() + " / " + userid1)
+                //console.log(file)
+                //alert(file)
+                //alert('ss')
+                var exi
+
+                if (file == undefined) {
+                    exi = "false"
+                    var formdata = new FormData();
+                    formdata.append("plateID", deleteid);
+                    formdata.append("user", userid1);
+                    formdata.append("nom", $("#modnom").val());
+                    formdata.append("calo", $("#modcalo").val());
+                    formdata.append("heur", ($("#moddate").val().substring(11, 17)));
+                    formdata.append("date", ($("#moddate").val().substring(0, 10)));
+                    formdata.append("eximg", exi);
+                } else {
+                    exi = "true"
+
+                    var formdata = new FormData();
+                    formdata.append("plateID", deleteid);
+                    formdata.append("user", userid1);
+                    formdata.append("nom", $("#modnom").val());
+                    formdata.append("calo", $("#modcalo").val());
+                    formdata.append("heur", ($("#moddate").val().substring(11, 17)));
+                    formdata.append("date", ($("#moddate").val().substring(0, 10)));
+                    formdata.append("eximg", exi);
+                    formdata.append("image", file[0]);
+
+                }
+                file = null
+
+                var requestOptions = {
+                    method: 'POST',
+                    body: formdata,
+                    redirect: 'follow'
+
+                };
+
+
+
+                fetch("http://localhost:3000/api/plate/update", requestOptions)
+                    .then(response => response.text())
+                    .then(result => console.log(result))
+                    .then(go => reloaded1())
+                    .then(go => $(".modal").hide())
+                    .catch(error => console.log('error', error));
+
+
+
+            })
+            $("#BT5").click(function() {
+                $(".btn69-delete").show()
+                    //alert(deleteid)
+                    /*var url = document.location.href,
+                        params = url.split('?')[1].split('&'),
+                        data = {},
+                        tmp;
+                    for (var i = 0, l = params.length; i < l; i++) {
+                        tmp = params[i].split('=');
+                        data[tmp[0]] = tmp[1];
+                    }
+                    var userid3 = data.user;
+                    var lastCharOfuserid = userid3.slice(-1)
+                    if (lastCharOfuserid == '#') {
+                        userid3 = userid3.slice(0, -1);
+                    }
+                    console.log(userid3)
+
+
+                    $.post("http://localhost:3000/api/user/show", {
+                        userID: userid3
+
+                    }, function(data, status) {
+                        $("#nomed").val(data.response.nom)
+                        $("#pnomed").val(data.response.prenom)
+                        $("#emailed").val(data.response.email)
+                        $("#teled").val(data.response.num)
+                        $("#mpsed").val(data.response.pass)
+                        $("#userimage").attr("src", data.response.avatar);
+                        $("#userimage1").attr("src", data.response.avatar);
+                        $("#nom11").html(data.response.prenom + data.response.nom)
+                        $("#nom12").html(data.response.prenom + data.response.nom)
+
+                    })*/
+            })
+
+            function defaul() {
+                $('#BT1 a').css({
+                    'background': '#fff0',
+                    'padding-top': '0rem',
+                    'padding-bottom': '0rem',
+                    'color': '#ffffff',
+                    'border-radius': '30px 0px 0px 30px'
+                });
+                $('#BT4 a').css({
+                    'background': '#fff0',
+                    'padding-top': '0rem',
+                    'padding-bottom': '0rem',
+                    'color': '#ffffff',
+                    'border-radius': '30px 0px 0px 30px'
+                });
+                $('#BT5 a').css({
+                    'background': '#fff0',
+                    'padding-top': '0rem',
+                    'padding-bottom': '0rem',
+                    'color': '#ffffff',
+                    'border-radius': '30px 0px 0px 30px'
+                });
+                $('#BT6 a').css({
+                    'background': '#fff0',
+                    'padding-top': '0rem',
+                    'padding-bottom': '0rem',
+                    'color': '#ffffff',
+                    'border-radius': '30px 0px 0px 30px'
+                });
+            }
+            $("#BT1").click(function() {
+                defaul()
+                $('#BT1 a').css({
+                    'background': '#fff',
+                    'padding-top': '1rem',
+                    'padding-bottom': '1rem',
+                    'color': '#020509',
+                    'border-radius': '30px 0px 0px 30px'
+                });
+
+
+            })
+            $("#accreset").click(function() {
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+                var userid2 = data.user;
+                var lastCharOfuserid = userid2.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid2 = userid2.slice(0, -1);
+                }
+
+                $.post("http://localhost:3000/api/user/delete", {
+                    userID: userid2
+
+                }, function(data, status) {
+                    console.log(data);
+                }).then(go => {
+                    reloaded()
+                })
+            })
+
+            $("#BT4").click(function() {
+                defaul()
+                $('#BT4 a').css({
+                    'background': '#fff',
+                    'padding-top': '1rem',
+                    'padding-bottom': '1rem',
+                    'color': '#020509',
+                    'border-radius': '30px 0px 0px 30px'
+                });
+
+                $(".olcards").hide()
+                $("#F3").hide()
+            })
+
+
+            $("#BT5").click(function() {
+                defaul()
+                $('#BT5 a').css({
+                    'background': '#fff',
+                    'padding-top': '1rem',
+                    'padding-bottom': '1rem',
+                    'color': '#020509',
+                    'border-radius': '30px 0px 0px 30px'
+                });
+            })
+
+
+            $("#BT6").click(function() {
+
+                defaul()
+                $('#BT6 a').css({
+                    'background': '#fff',
+                    'padding-top': '1rem',
+                    'padding-bottom': '1rem',
+                    'color': '#020509',
+                    'border-radius': '30px 0px 0px 30px'
+                });
+            })
+            $("#userimage1").click(function() {
+                filein()
+            })
+            $("#enregisterbtn").click(function() {
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+
+                var userid1 = data.user;
+                var lastCharOfuserid = userid1.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid1 = userid1.slice(0, -1);
+                }
+
+
+
+
+
+                if (file == undefined) {
+                    if (delimg == false) {
+                        var formdata = new FormData();
+                        formdata.append("userID", (userid1));
+                        formdata.append("nom", ($("#nomed").val()));
+
+                        formdata.append("prenom", ($("#pnomed").val()));
+                        formdata.append("num", ($("#teled").val()));
+                        formdata.append("email", ($("#emailed").val()));
+                        formdata.append("pass", ($("#mpsed").val()));
+                        formdata.append("rank", "user");
+                        formdata.append("eximg", "true2");
+                    } else {
+                        var formdata = new FormData();
+                        formdata.append("userID", (userid1));
+                        formdata.append("nom", ($("#nomed").val()));
+
+                        formdata.append("prenom", ($("#pnomed").val()));
+                        formdata.append("num", ($("#teled").val()));
+                        formdata.append("email", ($("#emailed").val()));
+                        formdata.append("pass", ($("#mpsed").val()));
+                        formdata.append("rank", "user");
+                        formdata.append("eximg", "false");
+                    }
+                } else {
+                    var formdata = new FormData();
+                    formdata.append("userID", (userid1));
+                    formdata.append("nom", ($("#nomed").val()));
+                    formdata.append("prenom", ($("#pnomed").val()));
+                    formdata.append("num", ($("#teled").val()));
+                    formdata.append("email", ($("#emailed").val()));
+                    formdata.append("pass", ($("#mpsed").val()));
+                    formdata.append("rank", "user");
+                    formdata.append("eximg", "true");
+                    formdata.append("avatar", file[0]);
+
+                }
+
+                var requestOptions = {
+                    method: 'POST',
+                    body: formdata,
+                    redirect: 'follow'
+
+                };
+
+
+
+                fetch("http://localhost:3000/api/user/update", requestOptions)
+                    .then(response => response.text())
+                    .then(result => reloaded())
+                    .catch(error => console.log('error', error));
+
+                file = undefined
+            })
+
+
+        })
+
+        $(document).on('click', '.deleter', function(e) {
+            // alert('dd')
+            // alert($(e.target).attr('id'))
+            var test = $(e.target).attr('id');
+            test = test.substring(5, test.length)
+
+            var data
+            var id
+            data = array[parseInt(test)].substring(0, 24)
+            id = array[parseInt(test)].substring(24, array[parseInt(test)].length)
+                // alert(data + " /  " + id)
+            $.post("http://localhost:3000/api/plate/delete", {
+                plateID: data
+            }, function(data, status) {
+                $("#plate" + id).hide()
+            }).then(go => {
+                reloaded1()
+            })
+
+            $("#userimage1").click(function() {
+
+                filein()
+
+            })
+
+        })
+        $(document).on('click', '.editter', function(e) {
+
+            var test = $(e.target).attr('id');
+            test = test.substring(4, test.length)
+
+            var deletev = parseInt(test)
+                //console.log(plates[deletev])
+
+            deleteid = plates[deletev]._id
+
+
+            //alert('hm' + test + "  " + plates[0].nom)
+            $(".modal").show()
+            $("#modnom").val(plates[deletev].nom)
+
+            $("#modcalo").val(plates[deletev].calo)
+
+            var heur = plates[deletev].heur.substring(0, 2)
+
+            var offheur;
+            offheur = heur.toString() + plates[deletev].heur.substring(2, 5)
+            $("#moddate").val(plates[deletev].date + "T" + offheur)
+
+        })
+        $(document).on('mouseenter', '#inputer', function() {
+            $("#lhmras").fadeOut(150);
+            setTimeout(
+                function() {
+                    $("#lhmras").hide()
+
+
+                }, 110);
+
+
+        })
+        $(document).on('mouseleave', '#inputer', function() {
+
+            setTimeout(
+                function() {
+                    $("#lhmras").show()
+
+
+                }, 120)
+        });
+        $(document).on('click', '.platein', function() {
+
+                var url = document.location.href,
+                    params = url.split('?')[1].split('&'),
+                    data = {},
+                    tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                    tmp = params[i].split('=');
+                    data[tmp[0]] = tmp[1];
+                }
+
+                var userid1 = data.user;
+                var lastCharOfuserid = userid1.slice(-1)
+                if (lastCharOfuserid == '#') {
+                    userid1 = userid1.slice(0, -1);
+                }
+
+                //console.log(document.getElementById('input').files[0])
+                //console.log(($("#time1").val().toString()).substring(0, 10) + " / " + ($("#time1").val().toString()).substring(11, 17) + "  / " + $("#nom1").val() + " / " + $("#calo1").val() + " / " + userid1)
+                //console.log(file)
+                //alert(file)
+                //alert('ss')
+                var exi
+                if (file == undefined) {
+
+                    exi = "false"
+                    var formdata = new FormData();
+                    formdata.append("user", userid1);
+                    formdata.append("nom", $("#nom1").val());
+                    formdata.append("calo", $("#calo1").val());
+                    formdata.append("heur", ($("#time1").val()).substring(11, 17));
+                    formdata.append("date", ($("#time1").val()).substring(0, 10));
+                    formdata.append("eximg", exi);
+                } else {
+                    exi = "true"
+
+                    var formdata = new FormData();
+                    formdata.append("user", userid1);
+                    formdata.append("nom", $("#nom1").val());
+                    formdata.append("calo", $("#calo1").val());
+                    formdata.append("heur", ($("#time1").val()).substring(11, 17));
+                    formdata.append("date", ($("#time1").val()).substring(0, 10));
+                    formdata.append("eximg", exi);
+                    formdata.append("image", file[0]);
+
+                }
+                file = null
+
+                var requestOptions = {
+                    method: 'POST',
+                    body: formdata,
+                    redirect: 'follow'
+
+                };
+
+
+
+                fetch("http://localhost:3000/api/plate/store", requestOptions)
+                    .then(response => response.text())
+                    .then(result => console.log(result))
+                    .then(go => reloaded1())
+                    .catch(error => console.log('error', error));
+
+
+            })
+            /*
+            var platers2 = []
+            var ara = []
+
+            function filter1() {
+                $(".olcardsfilt").empty()
+                platers2 = plates
+                ara = []
+                let calo = 0;
+                var lastp = 0;
+                looper = 0;
+                let datee = platers2[lastp].date;
+
+                let plat
+                let v = true
+                for (plat of platers2) {
+
+                    if (plat.date == datee) {
+                        alert(looper)
+
+                        calo += parseInt(plat.calo)
+                            //ara.append(plat)
+                        looper++
+
+                    } else {
+
+                        v = true
+
+                    }
+                    if (v) {
+                        ara.push(datee)
+                        ara.push(calo)
+                        infiller()
+                        datee = platers2[looper + 1]
+                        calo = 0
+                        v = false
+                    }
+                }
+
+            }
+
+            function infiller() {
+
+                $(".olcardsfilt").append(`
+                <div class="flip-card-filt" id="dy1" style="height: 9rem; width: 9rem; background-color: red; border-radius: 30%;  margin: 0 5px;">
+                            <h1 style="position: relative; top: 20%; left: 5%;font-size: 21px;">${ara[0]}</h1>
+                            <p style="margin-left: 40%;margin-top: 20%; "> ${ara[1]} cal</p>
+                        </div>
+                    `)
+            }
+            $(document).ready(function() {
+                $("#theeff").click(function() {
+                    filter1()
+                })
+            }) */
+    </script>
+    <script src="js/Adminscr.js"></script>
+</body>
+
+</html>
